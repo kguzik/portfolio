@@ -35,18 +35,18 @@ body {
 }
 
 /* animate hamburger */
- 
+
 .icon-bar {
-	width: 23px; 
-	height: 2px;
-	background-color: #3d80a5;
-	display: block;
-	transition: all 0.4s;
-	margin-top: 4px
+    width: 23px;
+    height: 2px;
+    background-color: #3d80a5;
+    display: block;
+    transition: all 0.4s;
+    margin-top: 4px
 }
 
 .navbar-toggler {
-  border: none;
+    border: none;
 }
 
 .navbar-toggler .top-bar {
@@ -59,11 +59,11 @@ body {
     -o-transform-origin: 10% 10%;
     transform-origin: 10% 10%;
 }
-   
+
 .navbar-toggler .middle-bar {
     opacity: 0;
 }
-   
+
 .navbar-toggler .bottom-bar {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -74,18 +74,18 @@ body {
     -o-transform-origin: 10% 90%;
     transform-origin: 10% 90%;
 }
-   
+
 .navbar-toggler.collapsed .top-bar {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
     -o-transform: rotate(0);
     transform: rotate(0);
 }
-   
+
 .navbar-toggler.collapsed .middle-bar {
     opacity: 1;
 }
-   
+
 .navbar-toggler.collapsed .bottom-bar {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -171,9 +171,11 @@ body {
         -o-transform: translateX(-50px);
         transform: translateX(-50px);
     }
+
     25% {
         opacity: 1;
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateX(0);
@@ -191,9 +193,11 @@ body {
         -o-transform: translateX(-50px);
         transform: translateX(-50px);
     }
+
     25% {
         opacity: 1;
     }
+
     100% {
         opacity: 1;
         -webkit-transform: translateX(0);
@@ -312,7 +316,7 @@ body {
     visibility: hidden;
 }
 
-#container-header h2 {
+#container-header h1 {
     font-weight: 300;
     font-size: 30px;
     opacity: 0;
@@ -399,10 +403,19 @@ body {
     padding-bottom: 30px;
 }
 
+#skills h2 {
+    padding-top: 70px;
+}
+
+#skills p {
+    padding-bottom: 50px;
+}
+
 .skills-row img {
     width: 75px;
     height: 75px;
     margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 #skills img:hover {
@@ -419,12 +432,14 @@ body {
         -o-transform: translateY(0px);
         transform: translateY(0px);
     }
+
     50% {
         -webkit-transform: translateY(-5px);
         -moz-transform: translateY(-5px);
         -o-transform: translateY(-5px);
         transform: translateY(-5px);
     }
+
     100% {
         -webkit-transform: translateY(0px);
         -moz-transform: translateY(0px);
@@ -440,12 +455,14 @@ body {
         -o-transform: translateY(0px);
         transform: translateY(0px);
     }
+
     50% {
         -webkit-transform: translateY(-5px);
         -moz-transform: translateY(-5px);
         -o-transform: translateY(-5px);
         transform: translateY(-5px);
     }
+
     100% {
         -webkit-transform: translateY(0px);
         -moz-transform: translateY(0px);
@@ -454,23 +471,12 @@ body {
     }
 }
 
-#skills h2 {
-    padding-top: 70px;
-}
-
-#skills p {
-    padding-bottom: 70px;
-}
-
-#skills-first-row {
-    padding: 0 30px 30px 30px;
-}
 
 /*portfolio*/
 
 #portfolio {
     text-align: center;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     padding-top: 30px;
 }
 
@@ -479,106 +485,41 @@ body {
     padding-bottom: 30px;
 }
 
-#portfolio-img {
-    background-image: url("../img/reveil.png");
-    height: 360px;
-    width: 60%;
+#portfolio img {
+    max-width: 95%;
+}
+
+.btn-portfolio {
+    color: #3d80a5;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-portfolio:hover {
+    color: #26546d;
+    text-decoration: none;
+}
+
+.caption-portfolio {
+    min-height: 110px;
+    width: 70%;
     margin: auto;
-    border: 1px solid #f2f2f2;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
-#mask {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    height: 100%;
-    opacity: 0;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
-    font-size: 13px;
-    padding: 10px;
-    position: relative;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
+.carousel-control-next-icon {
+    background-image: url("/img/arrow.png");
 }
 
-#mask:hover {
+.carousel-control-prev-icon {
+    background-image: url("/img/arrow.png");
+    transform: rotate(180deg);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
     opacity: 1;
-}
-
-#content-portfolio {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    text-align: center;
-    padding: 5px;
-}
-
-#content-show {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    font-size: 13px;
-    display: none;
-}
-
-#show-img {
-    margin: auto;
-    display: none;
-    height: 330px;
-    width: 540px;
-    margin-bottom: 20px;
-}
-
-#show-img img {
-    height: 100%;
-    width: 100%;
-}
-
-#show-second-img {
-    display: none;
-    margin: auto;
-    width: 310px;
-    height: 520px;
-    margin-bottom: 20px;
-}
-
-#show-second-img img {
-    width: 100%;
-    height: 100%;
-}
-
-.btn-portfolio input {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-    background-color: #f4f4f4;
-    color: black;
-    width: 10%;
-    margin: auto;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    cursor: pointer;
-    padding: 5px;
-    outline: none;
 }
 
 /*contact*/
